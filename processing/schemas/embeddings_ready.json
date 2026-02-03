@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "type": "object",
+  "required": [
+    "chunk_id",
+    "doc_id",
+    "version",
+    "text",
+    "embedding_model",
+    "created_at"
+  ],
+  "properties": {
+    "chunk_id": { "type": "string" },
+    "doc_id": { "type": "string" },
+    "version": { "type": "string" },
+    "text": { "type": "string" },
+    "embedding_model": { "type": "string" },
+    "metadata": { "type": "object", "additionalProperties": true },
+    "created_at": { "type": "string", "format": "date-time" }
+  }
+}

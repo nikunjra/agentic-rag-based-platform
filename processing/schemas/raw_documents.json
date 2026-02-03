@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "type": "object",
+  "required": [
+    "doc_id",
+    "source_type",
+    "source_uri",
+    "version",
+    "ingested_at",
+    "content_text"
+  ],
+  "properties": {
+    "doc_id": { "type": "string" },
+    "source_type": { "type": "string", "enum": ["pdf", "github", "web"] },
+    "source_uri": { "type": "string" },
+    "version": { "type": "string" },
+    "ingested_at": { "type": "string", "format": "date-time" },
+    "content_text": { "type": "string" },
+    "metadata": { "type": "object", "additionalProperties": true }
+  }
+}
